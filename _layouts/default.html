@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body class="nav-closed">
+
+    {% include navigation.html %}
+
+    <!-- nav button to open and close nav -->
+    <a class="btn-menu" title="Menu" href="#">
+        <i class="open fa fa-bars" aria-hidden="true"></i>
+        <i class="close fa fa-times" aria-hidden="true"></i>
+    </a>
+
+    {% include header.html %}
+
+    <div class="site-wrapper">
+      {{ content }}
+    </div>
+
+    {% include footer.html %}
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="{{ "/assets/js/scrolly.js" | relative_url }}"></script>
+    <script type="text/javascript" src="{{ "/assets/js/index.js" | relative_url }}"></script>
+
+  </body>
+</html>

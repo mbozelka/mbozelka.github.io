@@ -1,15 +1,26 @@
 ---
 layout: page
-title: About
+title: A Little About Me
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+<div class="about profile-pic">
+    <img src="{{ "/assets/images/profile-pic-1.jpg" | relative_url }}" alt="Matt Bozelka - Profile">
+</div>
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jekyll" %} /
-[minima](https://github.com/jekyll/minima)
+###### About me:
+My name is Matt Bozelka and I am currently a developer living in San Jose. I just recently finished a degree in Software Engineering at Cal State Monterey Bay. I also have a degree and experience in Graphic Design.
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+###### What I can do:
+I've been doing front-end dev for the last few years professionally, but I'm also experienced in other areas.
+I enjoy working on projects with:
+
+- Javascript
+- Node
+- Angular
+- Python
+- Java
+
+###### I'm currently exploring:
+Pretty much everything! I am interested in the idea of Javascript in embedded systems, and I would like to get my hands dirty with machine learning.
+I often feel like there is too much in too little time! I created this blog to hopefully start documenting things along the way.

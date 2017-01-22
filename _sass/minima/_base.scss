@@ -1,0 +1,178 @@
+/* reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.clearfix{
+    clear:both;
+}
+
+
+
+/*************************************************************
+defaults
+**************************************************************/
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+section, header, main, nav, footer{
+    float: left;
+    width: 100%;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+    color: #727272;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 120%;
+}
+
+h1{
+    font-size: 4em;
+    color: #fff;
+}
+
+h2{
+    font-size: 3.5em;
+}
+
+h3{
+    font-size: 3em;
+}
+
+h4{
+    font-size: 2.8em;
+}
+
+h5{
+    font-size: 2.6em;
+}
+
+h6{
+    font-size: 2.4em;
+}
+
+p, li{
+    font-size: 1.6em;
+    line-height: 160%;
+}
+
+a{
+    outline: 0;
+    border: none;
+    color: #F15835;
+    text-decoration: none;
+}
+
+a img {
+    outline: 0;
+    border: none;
+}
+
+a:hover {
+    text-decoration: underline
+}
+
+a.cta-btn{
+    font-family: 'Roboto Condensed', sans-serif;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fff;
+    border:1px solid #fff;
+    font-size: 2em;
+    padding: 12px 40px;
+    -webkit-transition: all 100ms ease-in;
+    -moz-transition: all 100ms ease-in;
+    -ms-transition: all 100ms ease-in;
+    -o-transition: all 100ms ease-in;
+    transition: all 100ms ease-in;
+}
+
+a.cta-btn:hover{
+    color:#F15835;
+    text-decoration: none;
+    border-color: #F15835;
+}
+
+a.cta-btn.secondary{
+    border-color: #F15835;
+    color:#F15835;
+}
+
+a.cta-btn.secondary:hover{
+    border-color: #F15835;
+    background-color: #F15835;
+    color:#fff;
+}
+
+img{
+    display: inline-block;
+}
+
+strong{
+    font-weight:bold;
+}
+
+.site-wrapper{
+    float: left;
+    width:100%;
+}

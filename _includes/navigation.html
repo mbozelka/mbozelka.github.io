@@ -1,0 +1,20 @@
+
+
+<nav class="main-nav">
+    
+    <div class="nav-inner-wrap">
+        <ul>
+            <li><i class="fa fa-chevron-left" aria-hidden="true"></i><a class="page-link" href="/">Home</a></li>
+            {% for my_page in site.pages %}
+                {% if my_page.title %}
+                <li><i class="fa fa-chevron-left" aria-hidden="true"></i><a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+    
+    <div class="subscribe">
+        <a class="cta-btn btn-subscribe" href="">Subscribe</a>
+    <div>
+</nav>
+<div class="nav-cover"></div>

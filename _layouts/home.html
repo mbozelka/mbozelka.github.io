@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+<main id="content" class="content" role="main">
+    <header class="post-header lp">
+      <h1>Matthew Bozelka<br/><span>Developer</span></h1>
+      <p class="social">
+          <a href="https://www.linkedin.com/in/mattbozelka" target="_blank" title="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;
+          <a href="https://github.com/mbozelka" target="_blank" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;
+          <span class="em" data-name="mattbozelka.dev" data-link="true"></span>
+      </p>
+  </header>
+  
+  {% for post in paginator.posts %}
+    <article class="post-roll">
+      <div class="post-roll-inner">
+          <time class="post-date">{{ post.date | date: "%b %-d, %Y" }}</time>
+          <h2 class="post-title"><a title="{{ post.title | escape }}" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+          <p>{{ post.blurb | escape }}</p>
+          <a class="cta-btn secondary" title="{{ post.title | escape }}" href="{{ post.url | relative_url }}">Read article</a>
+      </div>
+  </article>
+  {% endfor %}
+
+  <!-- Pagination links -->
+  {% if paginator.total_pages > 1 %}
+  <div class="page-number">Page {{paginator.page}} of {{paginator.total_pages}}</div>
+  <nav class="pagination" role="navigation">
+      <div class="prev">
+          {% if paginator.previous_page %}
+              <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Newer Posts"><i class="fa fa-arrow-left"></i> Newer Posts </a>
+          {% else %}
+              <i class="fa fa-arrow-left"> Newer Posts</i>
+          {% endif %}
+      </div>
+      <div class="next">
+          {% if paginator.next_page %}
+              <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Older Posts">Older Posts <i class="fa fa-arrow-right"></i></a>
+          {% else %}
+              Older Posts <i class="fa fa-arrow-right"></i>
+          {% endif %}
+      </div>
+  </nav>
+  {% endif %}
+
+</main>
