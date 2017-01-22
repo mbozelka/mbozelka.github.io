@@ -5,6 +5,7 @@ permalink: /resume/
 ---
 
 #### Experience:
+
 ###### Front End Developer, Triad Retail Media May 2010 – Present
 - Developed and maintained brand specific advertising micro-sites
 - Developed and maintained JavaScript plugins and libraries

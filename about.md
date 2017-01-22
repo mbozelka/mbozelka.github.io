@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 <div class="about profile-pic">
-    <img src="{{ "/assets/images/profile-pic-1.jpg" | relative_url }}" alt="Matt Bozelka - Profile">
+    <img src="{{ site.github.url }}/assets/images/profile-pic-1.jpg" alt="Matt Bozelka - Profile">
 </div>
 
 ###### About me:
