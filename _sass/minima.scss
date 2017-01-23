@@ -1,6 +1,12 @@
 
+
+$base-font-family: 'Roboto', sans-serif;
+$headers-font-family: 'Roboto Condensed', sans-serif;
+$code-font-family: Inconsolata, monospace, sans-serif;
+
 // Import partials.
 @import
   "minima/base",
-  "minima/layout"
+  "minima/layout",
+  "minima/syntax-highlighting"
 ;

@@ -26,7 +26,7 @@
             interval = setInterval(function(){
                 base.frameIn(i, text);
                 i++;
-            }, 100);
+            }, base.options.speed);
         };
         
         base.typeOut = function(){
